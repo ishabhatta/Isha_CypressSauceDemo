@@ -25,7 +25,7 @@ class LoginPage {
     }
   
     sortProductsByName(sortOption) {
-      cy.get('.product_sort_container').select(sortOption)
+      cy.get('[data-test="product-sort-container"]').select(sortOption)
     }
 
     sortProductsByPrice(sortOption) {
